@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>js千位分隔符（保留小数）</title>
+    <url>/2019/12/01/js%E5%8D%83%E4%BD%8D%E5%88%86%E9%9A%94%E7%AC%A6%EF%BC%88%E4%BF%9D%E7%95%99%E5%B0%8F%E6%95%B0%EF%BC%89/</url>
+    <content><![CDATA[<h2 id="简单粗暴直接上代码"><a href="#简单粗暴直接上代码" class="headerlink" title="简单粗暴直接上代码"></a>简单粗暴直接上代码</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">thousandBitSeparator</span>(<span class="params">num</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> num &amp;&amp; (num</span><br><span class="line">    .toString().indexOf(<span class="string">'.'</span>) != <span class="number">-1</span> ? num.toString().replace(<span class="regexp">/(\d)(?=(\d&#123;3&#125;)+\.)/g</span>, <span class="function"><span class="keyword">function</span>(<span class="params">$<span class="number">0</span>, $<span class="number">1</span></span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> $<span class="number">1</span> + <span class="string">","</span>;</span><br><span class="line">    &#125;) : num.toString().replace(<span class="regexp">/(\d)(?=(\d&#123;3&#125;))/g</span>, <span class="function"><span class="keyword">function</span>(<span class="params">$<span class="number">0</span>, $<span class="number">1</span></span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> $<span class="number">1</span> + <span class="string">","</span>;</span><br><span class="line">    &#125;));</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(thousandBitSeparator(<span class="number">1000</span>));</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>js</category>
+        <category>函数</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mac下webstorm 汉化解决方案</title>
+    <url>/2019/08/03/mac%E4%B8%8Bwebstorm%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<h2 id="一：去下载对应的汉化包-地址如下："><a href="#一：去下载对应的汉化包-地址如下：" class="headerlink" title="一：去下载对应的汉化包 地址如下："></a>一：去下载对应的汉化包 地址如下：</h2><p>汉化包链接 <a href="https://github.com/pingfangx/jetbrains-in-chinese/tree/master/WebStorm" target="_blank" rel="noopener">https://github.com/pingfangx/jetbrains-in-chinese/tree/master/WebStorm</a></p>
+<a id="more"></a>
+<p>记得要下载对应版本的汉化包，不然会出现问题的</p>
+<p><img src="https://img-blog.csdnimg.cn/20191216160658319.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjY2NTIwMA==,size_16,color_FFFFFF,t_70" alt="RUNOOB 图标"></p>
+<h2 id="二：复制到-Macintosh-HD⁩-▸-⁨应用程序⁩-▸-⁨WebStorm⁩-▸-⁨Contents⁩-▸-⁨lib⁩"><a href="#二：复制到-Macintosh-HD⁩-▸-⁨应用程序⁩-▸-⁨WebStorm⁩-▸-⁨Contents⁩-▸-⁨lib⁩" class="headerlink" title="二：复制到 Macintosh HD⁩ ▸ ⁨应用程序⁩ ▸ ⁨WebStorm⁩ ▸ ⁨Contents⁩ ▸ ⁨lib⁩"></a>二：复制到 Macintosh HD⁩ ▸ ⁨应用程序⁩ ▸ ⁨WebStorm⁩ ▸ ⁨Contents⁩ ▸ ⁨lib⁩</h2><p><img src="https://img-blog.csdnimg.cn/20191216160820379.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjY2NTIwMA==,size_16,color_FFFFFF,t_70" alt="RUNOOB 图标"><br><img src="https://img-blog.csdnimg.cn/20191216160945485.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjY2NTIwMA==,size_16,color_FFFFFF,t_70" alt="RUNOOB 图标"></p>
+<h2 id="三：重现打开WenStorm"><a href="#三：重现打开WenStorm" class="headerlink" title="三：重现打开WenStorm"></a>三：重现打开WenStorm</h2>]]></content>
+      <categories>
+        <category>汉化</category>
+        <category>工具</category>
+        <category>mac</category>
+      </categories>
+      <tags>
+        <tag>mac</tag>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>去掉mac safari浏览器input右边的小图标</title>
+    <url>/2019/04/11/%E5%8E%BB%E6%8E%89mac%20safari%E6%B5%8F%E8%A7%88%E5%99%A8input%E5%8F%B3%E8%BE%B9%E7%9A%84%E5%B0%8F%E5%9B%BE%E6%A0%87/</url>
+    <content><![CDATA[<p>昨天在做项目的时候，就遇到了一个小坑。<br>mac safari浏览器中的input右边回有默认的小图标，其实这个东西也无伤大雅，但是我们要用自己的图标，两个图标在一块重叠肯定不行，所以就找办法给他去掉了。</p>
+<hr>
+<p>可以在公共样式中或者单独加下面样式</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">// 去掉Safari浏览器下密码输入框自带的小钥匙图标</span><br><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">::-webkit-credentials-auto-fill-button</span> &#123;</span><br><span class="line"><span class="attribute">display</span>: none <span class="meta">!important</span>;</span><br><span class="line"><span class="attribute">visibility</span>: hidden;</span><br><span class="line"><span class="attribute">pointer-events</span>: none;</span><br><span class="line"><span class="attribute">position</span>: absolute;</span><br><span class="line"><span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>js</category>
+        <category>mac</category>
+        <category>兼容</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>mac</tag>
+        <tag>兼容</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vue当中axios调取后台数据 以及设置自定义请求头</title>
+    <url>/2019/01/04/vue%E5%BD%93%E4%B8%ADaxios%E8%B0%83%E5%8F%96%E5%90%8E%E5%8F%B0%E6%95%B0%E6%8D%AE%20%E4%BB%A5%E5%8F%8A%E8%AE%BE%E7%BD%AE%E8%87%AA%E5%AE%9A%E4%B9%89%E8%AF%B7%E6%B1%82%E5%A4%B4/</url>
+    <content><![CDATA[<h2 id="从vue2-0开始vue-resource就不再维护了，尤大大开始推荐使用-axios。-具体详细教程可在官网查阅，这篇文章主要说明一些简单的问题。"><a href="#从vue2-0开始vue-resource就不再维护了，尤大大开始推荐使用-axios。-具体详细教程可在官网查阅，这篇文章主要说明一些简单的问题。" class="headerlink" title="从vue2.0开始vue-resource就不再维护了，尤大大开始推荐使用 axios。  具体详细教程可在官网查阅，这篇文章主要说明一些简单的问题。"></a>从vue2.0开始vue-resource就不再维护了，尤大大开始推荐使用 axios。  具体详细教程可在官网查阅，这篇文章主要说明一些简单的问题。</h2><h2 id="第一步：安装axios"><a href="#第一步：安装axios" class="headerlink" title="第一步：安装axios"></a>第一步：安装axios</h2><p><code>$ npm install axios</code></p>
+<a id="more"></a>
+<h2 id="第二步：在-main-js中引入axios"><a href="#第二步：在-main-js中引入axios" class="headerlink" title="第二步：在 main.js中引入axios"></a>第二步：在 main.js中引入axios</h2><p><img src="https://img-blog.csdnimg.cn/2019010414565027.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjY2NTIwMA==,size_16,color_FFFFFF,t_70" alt="RUNOOB 图标"></p>
+<h2 id="第三步：设置我们自定义的-头请求："><a href="#第三步：设置我们自定义的-头请求：" class="headerlink" title="第三步：设置我们自定义的 头请求："></a>第三步：设置我们自定义的 头请求：</h2><p><code>header也可以在我们具体的请求中添加 header参数，我们这里是在main.js中添加公众的。
+axios.defaults.timeout = 5000; //请求超时的时间设定
+axios.defaults.headers.post[&#39;Content-Type&#39;] = &#39;application/json&#39;; //axios默认的请求方式,可以自己设置
+axios.defaults.baseURL = &#39;http://localhost:8008&#39;; //axios默认的请求地址,开发时可以实际的接口地址来设置该值,去请求别#人的接口(前提是后台已经帮你解决了接口的跨域问题,如果没有,请看下文,我们自己可以解决开发跨域的问题)
+axios.defaults.headers.common[&quot;token&quot;] = &quot;aaaaaaaaaaa&quot;; 这块token呢是因为当初调试接口的时候 有些接口必须登录才可以调用，而我们的登陆注册并未写好，因此 后台给了一个故固定的token，然后写在了头里面。</code></p>
+]]></content>
+      <categories>
+        <category>axios</category>
+        <category>vue</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>vue</tag>
+      </tags>
+  </entry>
+</search>

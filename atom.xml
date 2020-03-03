@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>云锦书</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-03-03T06:01:23.716Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Zheng Yang</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>js千位分隔符（保留小数）</title>
+    <link href="http://yoursite.com/2019/12/01/js%E5%8D%83%E4%BD%8D%E5%88%86%E9%9A%94%E7%AC%A6%EF%BC%88%E4%BF%9D%E7%95%99%E5%B0%8F%E6%95%B0%EF%BC%89/"/>
+    <id>http://yoursite.com/2019/12/01/js%E5%8D%83%E4%BD%8D%E5%88%86%E9%9A%94%E7%AC%A6%EF%BC%88%E4%BF%9D%E7%95%99%E5%B0%8F%E6%95%B0%EF%BC%89/</id>
+    <published>2019-12-01T06:43:17.000Z</published>
+    <updated>2020-03-03T06:01:23.716Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;简单粗暴直接上代码&quot;&gt;&lt;a href=&quot;#简单粗暴直接上代码&quot; class=&quot;headerlink&quot; title=&quot;简单粗暴直接上代码&quot;&gt;&lt;/a&gt;简单粗暴直接上代码&lt;/h2&gt;&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+    
+      <category term="js" scheme="http://yoursite.com/categories/js/"/>
+    
+      <category term="函数" scheme="http://yoursite.com/categories/js/%E5%87%BD%E6%95%B0/"/>
+    
+    
+      <category term="前端" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mac下webstorm 汉化解决方案</title>
+    <link href="http://yoursite.com/2019/08/03/mac%E4%B8%8Bwebstorm%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+    <id>http://yoursite.com/2019/08/03/mac%E4%B8%8Bwebstorm%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</id>
+    <published>2019-08-03T05:43:17.000Z</published>
+    <updated>2020-03-03T05:55:13.694Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;一：去下载对应的汉化包-地址如下：&quot;&gt;&lt;a href=&quot;#一：去下载对应的汉化包-地址如下：&quot; class=&quot;headerlink&quot; title=&quot;一：去下载对应的汉化包 地址如下：&quot;&gt;&lt;/a&gt;一：去下载对应的汉化包 地址如下：&lt;/h2&gt;&lt;p&gt;汉化包链接 &lt;a href=&quot;https://github.com/pingfangx/jetbrains-in-chinese/tree/master/WebStorm&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/pingfangx/jetbrains-in-chinese/tree/master/WebStorm&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="汉化" scheme="http://yoursite.com/categories/%E6%B1%89%E5%8C%96/"/>
+    
+      <category term="工具" scheme="http://yoursite.com/categories/%E6%B1%89%E5%8C%96/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="mac" scheme="http://yoursite.com/categories/%E6%B1%89%E5%8C%96/%E5%B7%A5%E5%85%B7/mac/"/>
+    
+    
+      <category term="mac" scheme="http://yoursite.com/tags/mac/"/>
+    
+      <category term="工具" scheme="http://yoursite.com/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>去掉mac safari浏览器input右边的小图标</title>
+    <link href="http://yoursite.com/2019/04/11/%E5%8E%BB%E6%8E%89mac%20safari%E6%B5%8F%E8%A7%88%E5%99%A8input%E5%8F%B3%E8%BE%B9%E7%9A%84%E5%B0%8F%E5%9B%BE%E6%A0%87/"/>
+    <id>http://yoursite.com/2019/04/11/%E5%8E%BB%E6%8E%89mac%20safari%E6%B5%8F%E8%A7%88%E5%99%A8input%E5%8F%B3%E8%BE%B9%E7%9A%84%E5%B0%8F%E5%9B%BE%E6%A0%87/</id>
+    <published>2019-04-11T07:44:19.000Z</published>
+    <updated>2020-03-03T06:04:50.653Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;昨天在做项目的时候，就遇到了一个小坑。&lt;br&gt;mac
+        
+      
+    
+    </summary>
+    
+    
+      <category term="js" scheme="http://yoursite.com/categories/js/"/>
+    
+      <category term="mac" scheme="http://yoursite.com/categories/js/mac/"/>
+    
+      <category term="兼容" scheme="http://yoursite.com/categories/js/mac/%E5%85%BC%E5%AE%B9/"/>
+    
+    
+      <category term="前端" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="mac" scheme="http://yoursite.com/tags/mac/"/>
+    
+      <category term="兼容" scheme="http://yoursite.com/tags/%E5%85%BC%E5%AE%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue当中axios调取后台数据 以及设置自定义请求头</title>
+    <link href="http://yoursite.com/2019/01/04/vue%E5%BD%93%E4%B8%ADaxios%E8%B0%83%E5%8F%96%E5%90%8E%E5%8F%B0%E6%95%B0%E6%8D%AE%20%E4%BB%A5%E5%8F%8A%E8%AE%BE%E7%BD%AE%E8%87%AA%E5%AE%9A%E4%B9%89%E8%AF%B7%E6%B1%82%E5%A4%B4/"/>
+    <id>http://yoursite.com/2019/01/04/vue%E5%BD%93%E4%B8%ADaxios%E8%B0%83%E5%8F%96%E5%90%8E%E5%8F%B0%E6%95%B0%E6%8D%AE%20%E4%BB%A5%E5%8F%8A%E8%AE%BE%E7%BD%AE%E8%87%AA%E5%AE%9A%E4%B9%89%E8%AF%B7%E6%B1%82%E5%A4%B4/</id>
+    <published>2019-01-04T07:02:59.000Z</published>
+    <updated>2020-03-03T06:17:13.588Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;从vue2-0开始vue-resource就不再维护了，尤大大开始推荐使用-axios。-具体详细教程可在官网查阅，这篇文章主要说明一些简单的问题。&quot;&gt;&lt;a href=&quot;#从vue2-0开始vue-resource就不再维护了，尤大大开始推荐使用-axios。-具体详细教程可在官网查阅，这篇文章主要说明一些简单的问题。&quot; class=&quot;headerlink&quot; title=&quot;从vue2.0开始vue-resource就不再维护了，尤大大开始推荐使用 axios。  具体详细教程可在官网查阅，这篇文章主要说明一些简单的问题。&quot;&gt;&lt;/a&gt;从vue2.0开始vue-resource就不再维护了，尤大大开始推荐使用 axios。  具体详细教程可在官网查阅，这篇文章主要说明一些简单的问题。&lt;/h2&gt;&lt;h2 id=&quot;第一步：安装axios&quot;&gt;&lt;a href=&quot;#第一步：安装axios&quot; class=&quot;headerlink&quot; title=&quot;第一步：安装axios&quot;&gt;&lt;/a&gt;第一步：安装axios&lt;/h2&gt;&lt;p&gt;&lt;code&gt;$ npm install axios&lt;/code&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="axios" scheme="http://yoursite.com/categories/axios/"/>
+    
+      <category term="vue" scheme="http://yoursite.com/categories/axios/vue/"/>
+    
+    
+      <category term="前端" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
+    
+  </entry>
+  
+</feed>
