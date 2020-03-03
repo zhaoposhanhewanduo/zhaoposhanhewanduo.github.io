@@ -1,6 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo免费搭建属于自己的博客</title>
+    <url>/2020/03/03/Hexo%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<blockquote>
+<p>作为一名从事web好几年的我来说，喜欢用一些东西来记录自己平时遇到的问题，像是csdn、简书，这些都属于第三方网站，有一个自己专属的空间最好不多了，今天跟大家分享一下免费使用hexo搭建属于自己的免费博客，下面咱们开始搭建吧。</p>
+</blockquote>
+<h1 id="一：前言"><a href="#一：前言" class="headerlink" title="一：前言"></a>一：前言</h1><pre><code>该博客用的是Hexo框架，基于Node.js，搭建博客首先需要有一个GitHub账号并且配置了SSH Keys（申请步骤这里就不介绍了，网上教程很多），然后在GitHub里创建一个名为username.github.io的仓库，还需要安装Git、安装Node.js、安装Hexo</code></pre><h1 id="二：准备开始"><a href="#二：准备开始" class="headerlink" title="二：准备开始"></a>二：准备开始</h1><a id="more"></a>
+<blockquote>
+<ol>
+<li><h3 id="首先创建一个github仓库"><a href="#首先创建一个github仓库" class="headerlink" title="首先创建一个github仓库"></a>首先创建一个github仓库</h3></li>
+</ol>
+</blockquote>
+<pre><code>创建一个名为username.github.io的仓库</code></pre><p>在GitHub中新建仓库相信你们都会，点击New repository创建，注意：仓库名称一定是username.github.io这种格式，username替换一个你喜欢的名字<br>下图之所以会报红，是因为我已经有了一个同样名字的仓库，所以不能再次创建。</p>
+<p><img src="https://img-blog.csdnimg.cn/20200303145118663.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjY2NTIwMA==,size_16,color_FFFFFF,t_70" alt="RUNOOB 图标">    </p>
+<blockquote>
+<ol start="2">
+<li><h3 id="安装git与node"><a href="#安装git与node" class="headerlink" title="安装git与node"></a>安装git与node</h3></li>
+</ol>
+</blockquote>
+<pre><code>相信看到这篇文章的小伙伴都已经安装完环境了，在这里就不多叙述了。</code></pre><blockquote>
+<ol start="3">
+<li><h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3></li>
+</ol>
+</blockquote>
+<p>   所有必备的程序安装完成以后，就可以时候用npm安装Hexo了。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<h1 id="三：建站"><a href="#三：建站" class="headerlink" title="三：建站"></a>三：建站</h1><blockquote>
+<ol>
+<li><h3 id="创建文件"><a href="#创建文件" class="headerlink" title="创建文件"></a>创建文件</h3>安装完Hexo之后，在某个目录下新建一个文件夹命名为username（替换成你喜欢的名字），然后cd到username文件夹下</li>
+</ol>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd username</span><br><span class="line">$ hexo init</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<p>执行完毕后你将看到在你刚创建的文件夹下会有很多资源 </p>
+<blockquote>
+<ol start="2">
+<li><h3 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h3>接下来打开username下的_config.yml文件（上图中的第一个文件），修改一下里面几个关键的信息，修改完记得保存，注意：冒号后面要有空格。</li>
+</ol>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: 云锦书     &#x2F;&#x2F;你博客的名字</span><br><span class="line">author: 云锦书    &#x2F;&#x2F;你的名字</span><br><span class="line">language: zh-Hans  &#x2F;&#x2F;语言-简体中文</span><br></pre></td></tr></table></figure>
+<p> 以上是三个关键信息，更多信息参考配置</p>
+<blockquote>
+<ol start="3">
+<li><h3 id="主题安装"><a href="#主题安装" class="headerlink" title="主题安装"></a>主题安装</h3>username下的themes文件夹中存放的是主题，默认的是landscape主题，如果你不喜欢可以安装其他主题。<br>NexT主题是一套简约的主题，是目前使用最火的一个主题，下面我们安装一下该主题，你也可参考安装NexT。<br>Hexo还有更多主题供你选择</li>
+</ol>
+</blockquote>
+<p>安装Next主题：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd username        &#x2F;&#x2F;进入到username文件夹下</span><br><span class="line">$ git clone https:&#x2F;&#x2F;github.com&#x2F;iissnan&#x2F;hexo-theme-next themes&#x2F;next</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>启用NexT主题：<br>打开username下的_config.yml文件（上图中的第一个文件），找到theme字段将其值更改为next</p>
+</blockquote>
+<p>验证主题<br>注意：每次切换主题之后、验证主题之前都要清除 Hexo 的缓存</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo clean    &#x2F;&#x2F;清除缓存</span><br></pre></td></tr></table></figure>
+<p>开始验证：开始验证：启动Hexo本地服务器</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+<p>然后你将会看到终端输出</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">INFO  Hexo is running at http:&#x2F;&#x2F;localhost:4000 . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
+<p>这行的意思是说你用浏览器打开 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 便可看到你的博客了，这只是本地的测试，如果测试没问题就执行Ctrl+C退出去，此时该地址就不能访问了。</p>
+<h1 id="四：写文章"><a href="#四：写文章" class="headerlink" title="四：写文章"></a>四：写文章</h1><blockquote>
+<ol>
+<li><h3 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h3></li>
+</ol>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo new layout title</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<ol start="2">
+<li><h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3>写完文章之后执行，来生成静态网页文件</li>
+</ol>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo g        &#x2F;&#x2F;hexo generate的缩写</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ol start="3">
+<li><h3 id="启动本地服务器"><a href="#启动本地服务器" class="headerlink" title="启动本地服务器"></a>启动本地服务器</h3></li>
+</ol>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo s        &#x2F;&#x2F;hexo server的缩写</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ol start="4">
+<li><h3 id="部署网站"><a href="#部署网站" class="headerlink" title="部署网站"></a>部署网站</h3>安装部署工具</li>
+</ol>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p> 安装完毕后打开username下的_config.yml文件，翻到最底部找到deploy节点编辑如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https:&#x2F;&#x2F;github.com&#x2F;YoungerLi&#x2F;youngerli.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line"> 其中https:&#x2F;&#x2F;github.com&#x2F;YoungerLi&#x2F;youngerli.github.io.git就是你GitHub中创建的仓库地址。</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>最后，部署网站</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo d        &#x2F;&#x2F;hexo deploy的缩写</span><br><span class="line">第一次执行这一步的时候会让你输入你的GitHub的用户名及密码，输入正确无误后执行完毕，任何人就可以访问 https:&#x2F;&#x2F;youngerli.github.io 进入你的博客了。</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">以后每次写完文章之后依次执行以下命令就可以发布更新了</span><br><span class="line"></span><br><span class="line">$ hexo clean      &#x2F;&#x2F; 清除缓存</span><br><span class="line">$ hexo g          &#x2F;&#x2F; 生成静态网页文件</span><br><span class="line">$ hexo d          &#x2F;&#x2F; 将本地博客发布到github</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="五、更多"><a href="#五、更多" class="headerlink" title="五、更多"></a>五、更多</h1><p>这样子下来咱们的博客网站已经基本差不多了，并且还有了一个主题，下片文章会说到，next主题的详细配置</p>
+]]></content>
+      <categories>
+        <category>js</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vue随笔</title>
+    <url>/2020/03/03/vue%E9%9A%8F%E7%AC%94/</url>
+    <content><![CDATA[<blockquote>
+<p>这篇vue随笔将在我的工作中不断地更新，暂时将这片文章分为几大模块。</p>
+</blockquote>
+<h1 id="一：vue简介"><a href="#一：vue简介" class="headerlink" title="一：vue简介"></a>一：vue简介</h1><blockquote>
+<p>Vue.js（读音 /vjuː/, 类似于 view） 是一套构建用户界面的渐进式框架。到我写这片这片文章<a href="https://cn.vuejs.org/" target="_blank" rel="noopener">官方文档</a>已经更新到2.x；详细内容可在官方查看，若有什么不对的地方多多指出，谢谢！</p>
+</blockquote>
+<h1 id="二：vue的生命周期"><a href="#二：vue的生命周期" class="headerlink" title="二：vue的生命周期"></a>二：vue的生命周期</h1><a id="more"></a>
+<ol>
+<li><h3 id="什么是生命周期"><a href="#什么是生命周期" class="headerlink" title="什么是生命周期"></a>什么是生命周期</h3><blockquote>
+<p>简单来说生命周期就是从vue实例创建、运行、到销毁的时间，在这一过程中，总是伴随着各种各样的事件，这些事件，统称为生命周期,生命周期钩子就是事件别名而已</p>
+</blockquote>
+</li>
+<li><h3 id="生命周期图以及介绍"><a href="#生命周期图以及介绍" class="headerlink" title="生命周期图以及介绍"></a>生命周期图以及介绍</h3><blockquote>
+<p>每个 Vue 实例在被创建时都要经过一系列的初始化过程——例如，需要设置数据监听、编译模板、将实例挂载到 DOM 并在数据变化时更新   DOM 等。同时在这个过程中也会运行一些叫做生命周期钩子的函数，这给了用户在不同阶段添加自己的代码的机会。<br>由下图我们看出，vue的生命周期细分为八个阶段。下面一一介绍这几个生命周期函数钩子。</p>
+</blockquote>
+<h4 id="beforeCreate"><a href="#beforeCreate" class="headerlink" title="beforeCreate"></a>beforeCreate</h4><pre><code>vue实例刚刚被创建出来，此时data、dom、数据都还未初始化；</code></pre><h4 id="created"><a href="#created" class="headerlink" title="created"></a>created</h4><pre><code>数据data已经初始完成，此时methods也可以调用，但是dom还未渲染；</code></pre><h4 id="beforeMount"><a href="#beforeMount" class="headerlink" title="beforeMount"></a>beforeMount</h4><pre><code>DOM未完成挂载，数据也初始化完成，但是数据的双向绑定还是显示{{}}，这是因为Vue采用了Virtual DOM（虚拟Dom）技术。先占住了一个坑；</code></pre><h4 id="mounted"><a href="#mounted" class="headerlink" title="mounted"></a>mounted</h4><pre><code>数据和DOM都完成挂载，在上一个周期占位的数据把值给渲染进去。可以在这边请求，不过created请求会更好一些。这个周期适合执行初始化需要操作DOM的方法。</code></pre><h4 id="beforeUpdate"><a href="#beforeUpdate" class="headerlink" title="beforeUpdate"></a>beforeUpdate</h4><pre><code>只要是页面数据改变了都会触发，数据更新之前，页面数据还是原来的数据，当你请求赋值一个数据的时候会执行这个周期，如果没有数据改变不执行。</code></pre><h4 id="beforeDestroy"><a href="#beforeDestroy" class="headerlink" title="beforeDestroy"></a>beforeDestroy</h4><pre><code>这个周期是在组件销毁之前执行，在我项目开发中，觉得这个其实有点类似路由钩子beforeRouterLeave,都是在路由离开的时候执行，只不过beforeDestroy无法阻止路由跳转，但是可以做一些路由离开的时候操作，因为这个周期里面还可以使用data和method。比如一个倒计时组件，如果在路由跳转的时候没有清除，这个定时器还是在的，这时候就可以在这个里面清除计时器。</code></pre><h4 id="Destroy"><a href="#Destroy" class="headerlink" title="Destroy"></a>Destroy</h4><pre><code>说实在的，我还真的不知道这个周期跟beforeDestroy有什么区别，我在这个周期里面调用data的数据和methods的方法都能调用，所以我会觉得跟beforeDestroy是一样的。</code></pre><p><img src="https://img-blog.csdnimg.cn/20200303164812270.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjY2NTIwMA==,size_16,color_FFFFFF,t_70" alt="RUNOOB 图标"> </p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>前端</category>
+        <category>vue</category>
+        <category>es6</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>vue</tag>
+        <tag>es6</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>js千位分隔符（保留小数）</title>
     <url>/2019/12/01/js%E5%8D%83%E4%BD%8D%E5%88%86%E9%9A%94%E7%AC%A6%EF%BC%88%E4%BF%9D%E7%95%99%E5%B0%8F%E6%95%B0%EF%BC%89/</url>
     <content><![CDATA[<h2 id="简单粗暴直接上代码"><a href="#简单粗暴直接上代码" class="headerlink" title="简单粗暴直接上代码"></a>简单粗暴直接上代码</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">thousandBitSeparator</span>(<span class="params">num</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> num &amp;&amp; (num</span><br><span class="line">    .toString().indexOf(<span class="string">'.'</span>) != <span class="number">-1</span> ? num.toString().replace(<span class="regexp">/(\d)(?=(\d&#123;3&#125;)+\.)/g</span>, <span class="function"><span class="keyword">function</span>(<span class="params">$<span class="number">0</span>, $<span class="number">1</span></span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> $<span class="number">1</span> + <span class="string">","</span>;</span><br><span class="line">    &#125;) : num.toString().replace(<span class="regexp">/(\d)(?=(\d&#123;3&#125;))/g</span>, <span class="function"><span class="keyword">function</span>(<span class="params">$<span class="number">0</span>, $<span class="number">1</span></span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> $<span class="number">1</span> + <span class="string">","</span>;</span><br><span class="line">    &#125;));</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(thousandBitSeparator(<span class="number">1000</span>));</span><br></pre></td></tr></table></figure>]]></content>
@@ -46,8 +182,8 @@
       </categories>
       <tags>
         <tag>前端</tag>
-        <tag>兼容</tag>
         <tag>mac</tag>
+        <tag>兼容</tag>
       </tags>
   </entry>
   <entry>

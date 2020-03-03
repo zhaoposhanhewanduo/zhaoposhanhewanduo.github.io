@@ -2,19 +2,82 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>云锦书</title>
   
-  
+  <subtitle>云中谁寄锦书来</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-03T06:01:23.716Z</updated>
+  <updated>2020-03-03T08:42:49.384Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>Zheng Yang</name>
+    <name>云锦书</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo免费搭建属于自己的博客</title>
+    <link href="http://yoursite.com/2020/03/03/Hexo%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2020/03/03/Hexo%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</id>
+    <published>2020-03-03T06:43:17.000Z</published>
+    <updated>2020-03-03T08:42:49.384Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;作为一名从事web好几年的我来说，喜欢用一些东西来记录自己平时遇到的问题，像是csdn、简书，这些都属于第三方网站，有一个自己专属的空间最好不多了，今天跟大家分享一下免费使用hexo搭建属于自己的免费博客，下面咱们开始搭建吧。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;一：前言&quot;&gt;&lt;a href=&quot;#一：前言&quot; class=&quot;headerlink&quot; title=&quot;一：前言&quot;&gt;&lt;/a&gt;一：前言&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;该博客用的是Hexo框架，基于Node.js，搭建博客首先需要有一个GitHub账号并且配置了SSH Keys（申请步骤这里就不介绍了，网上教程很多），然后在GitHub里创建一个名为username.github.io的仓库，还需要安装Git、安装Node.js、安装Hexo&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;二：准备开始&quot;&gt;&lt;a href=&quot;#二：准备开始&quot; class=&quot;headerlink&quot; title=&quot;二：准备开始&quot;&gt;&lt;/a&gt;二：准备开始&lt;/h1&gt;
+    
+    </summary>
+    
+    
+      <category term="js" scheme="http://yoursite.com/categories/js/"/>
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/js/Hexo/"/>
+    
+    
+      <category term="前端" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue随笔</title>
+    <link href="http://yoursite.com/2020/03/03/vue%E9%9A%8F%E7%AC%94/"/>
+    <id>http://yoursite.com/2020/03/03/vue%E9%9A%8F%E7%AC%94/</id>
+    <published>2020-03-03T06:43:17.000Z</published>
+    <updated>2020-03-03T09:11:01.531Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;这篇vue随笔将在我的工作中不断地更新，暂时将这片文章分为几大模块。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;一：vue简介&quot;&gt;&lt;a href=&quot;#一：vue简介&quot; class=&quot;headerlink&quot; title=&quot;一：vue简介&quot;&gt;&lt;/a&gt;一：vue简介&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;Vue.js（读音 /vjuː/, 类似于 view） 是一套构建用户界面的渐进式框架。到我写这片这片文章&lt;a href=&quot;https://cn.vuejs.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官方文档&lt;/a&gt;已经更新到2.x；详细内容可在官方查看，若有什么不对的地方多多指出，谢谢！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;二：vue的生命周期&quot;&gt;&lt;a href=&quot;#二：vue的生命周期&quot; class=&quot;headerlink&quot; title=&quot;二：vue的生命周期&quot;&gt;&lt;/a&gt;二：vue的生命周期&lt;/h1&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="vue" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/vue/"/>
+    
+      <category term="es6" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/vue/es6/"/>
+    
+    
+      <category term="前端" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
+    
+      <category term="es6" scheme="http://yoursite.com/tags/es6/"/>
+    
+  </entry>
   
   <entry>
     <title>js千位分隔符（保留小数）</title>
@@ -103,9 +166,9 @@
     
       <category term="前端" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="兼容" scheme="http://yoursite.com/tags/%E5%85%BC%E5%AE%B9/"/>
-    
       <category term="mac" scheme="http://yoursite.com/tags/mac/"/>
+    
+      <category term="兼容" scheme="http://yoursite.com/tags/%E5%85%BC%E5%AE%B9/"/>
     
   </entry>
   
