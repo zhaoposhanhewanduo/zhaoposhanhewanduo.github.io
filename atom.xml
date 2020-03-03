@@ -103,9 +103,9 @@
     
       <category term="前端" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="mac" scheme="http://yoursite.com/tags/mac/"/>
-    
       <category term="兼容" scheme="http://yoursite.com/tags/%E5%85%BC%E5%AE%B9/"/>
+    
+      <category term="mac" scheme="http://yoursite.com/tags/mac/"/>
     
   </entry>
   
